@@ -1,6 +1,8 @@
 package com.pravs.spring.grade.models;
 
-public class user {
+import org.springframework.context.annotation.Configuration;
+
+public class user implements IUser {
     private final long id;
     private final String firstName;
     private final String lastName;
@@ -21,5 +23,10 @@ public class user {
 
     public String getLastName() {
         return lastName;
+    }
+
+    @Override
+    public String getFullName() {
+        return this.firstName + " " + this.lastName;
     }
 }
