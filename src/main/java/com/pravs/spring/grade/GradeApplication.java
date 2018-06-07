@@ -1,7 +1,5 @@
 package com.pravs.spring.grade;
 
-import com.pravs.spring.grade.models.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.pravs.spring.grade.models.user;
