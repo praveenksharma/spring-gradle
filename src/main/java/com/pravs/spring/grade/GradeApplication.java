@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan("com.pravs")
+//@ComponentScan("com.pravs")
 public class GradeApplication {
 
 	public static void main(String[] args) {
