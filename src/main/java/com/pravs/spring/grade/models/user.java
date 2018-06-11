@@ -1,7 +1,5 @@
 package com.pravs.spring.grade.models;
 
-import org.springframework.context.annotation.Configuration;
-
 public class user implements IUser {
     private final long id;
     private final String firstName;

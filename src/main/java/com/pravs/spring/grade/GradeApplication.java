@@ -5,10 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.pravs.spring.grade.models.user;
 import org.joda.time.LocalTime;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
 
 
 @SpringBootApplication
-//@ComponentScan("com.pravs")
+@ComponentScan(excludeFilters = {
+        @ComponentScan.Filter(type = FilterType.REGEX, pattern = "com.pravs.spring.grade.models.soundsystem.*")})
 public class GradeApplication {
 
 	public static void main(String[] args) {
@@ -20,8 +22,5 @@ public class GradeApplication {
 		LocalTime currentTime = new LocalTime();
 		System.out.println("The current local time is: " + currentTime);
 		SpringApplication.run(GradeApplication.class, args);
-
-//        System.out.println("Testing DI with @Component and @Autowired");
-//
 	}
 }
